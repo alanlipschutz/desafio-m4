@@ -1,0 +1,68 @@
+/* font familiy to use
+ font-family: 'Montserrat', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* main block */
+.main__container {
+  height: 80vh;
+  background-color: rgba(20, 20, 20, 1);
+  padding: 32px;
+}
+
+.main__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.main__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: rgba(250, 250, 250, 1);
+  padding-top: 20px;
+}
+
+/* my services block */
+
+.my-services {
+  padding: 30px;
+  overflow: auto;
+  text-align: center;
+}
+.my-services__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+.my-services__container {
+  display: flex;
+  flex-direction: column;
+}
+.container__services {
+  padding: 20px;
+}
+.container__services__img {
+  width: 120px;
+  height: 120px;
+}
+.container__services__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.container__services__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}

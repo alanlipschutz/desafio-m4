@@ -1,0 +1,33 @@
+.footer {
+  background-color: rgba(44, 44, 44, 1);
+  overflow: auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+.footer__social-container {
+  text-align: center;
+}
+.footer__social-link {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+.link__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(219, 219, 219, 1);
+  padding-right: 7px;
+}
+.link__img {
+}
