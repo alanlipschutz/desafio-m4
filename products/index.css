@@ -1,8 +1,7 @@
-.products__header-container {
-  background-size: cover;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  background-color: black;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }

@@ -1,5 +1,5 @@
 function main() {
-  addFooter(footerSectionEl);
+  const footerSectionEl = document.querySelector(".footer-container");
 }
 
 main();
