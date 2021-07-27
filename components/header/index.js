@@ -14,9 +14,9 @@ function addHeader(el) {
     </div>
     <div class="nav__container__links">
       <a href="./" class="nav__link">Home</a>
-      <a href="./products.html" class="nav__link">Portfolio</a>
-      <a href="./services.html" class="nav__link">Servicios</a>
-      <a href="./contact.html" class="nav__link">Contacto</a>
+      <a href="./products/products.html" class="nav__link">Portfolio</a>
+      <a href="./services/services.html" class="nav__link">Servicios</a>
+      <a href="./form/contact.html" class="nav__link">Contacto</a>
       </div>
     </nav>
   

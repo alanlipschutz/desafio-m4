@@ -1,5 +1,5 @@
 .header-container {
-  background-image: url(../images/image-fondo.jpg);
+  background-image: url(/images/image-fondo.jpg);
   background-size: cover;
   height: 100vh;
   display: flex;
