@@ -1,7 +1,4 @@
 .header-container {
-  background-image: url(/images/image-fondo.jpg);
-  background-size: cover;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -37,7 +34,6 @@
 
 .header__home {
   flex-grow: 1;
-  padding-top: 35vh;
 }
 
 .header__home__title {

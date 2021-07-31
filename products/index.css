@@ -4,4 +4,48 @@
 
 body {
   margin: 0;
+  background-color: black;
+}
+
+/* block header */
+
+.header-container {
+}
+
+.header__home {
+  padding: 80px;
+}
+
+.portfolio-content {
+  text-align: center;
+}
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-card {
+  padding: 0px 50px;
+}
+.portfolio-card__img {
+  width: 290px;
+  height: 170px;
+}
+.portfolio-card__title {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(219, 219, 219, 1);
+}
+.portfolio-card__description {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(219, 219, 219, 1);
+}
+.portfolio-card__link {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(252, 111, 80, 1);
+  margin-bottom: 66px;
 }

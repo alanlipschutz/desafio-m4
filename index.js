@@ -5,8 +5,6 @@ function addComponents() {
   const formSectionEl = document.querySelector(".form-container");
   const footerSectionEl = document.querySelector(".footer-container");
   addHeader(headerSectionEl);
-  openMenu();
-  closeMenu();
   addForm(formSectionEl);
   addFooter(footerSectionEl);
 }

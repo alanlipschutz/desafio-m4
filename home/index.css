@@ -1,0 +1,9 @@
+.header-container {
+  background-image: url(/images/image-fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.header__home {
+  padding-top: 35vh;
+}
