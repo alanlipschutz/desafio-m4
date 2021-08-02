@@ -31,7 +31,6 @@ function getPortfolio() {
       return res.json();
     })
     .then((json) => {
-      console.log(json);
       const portfolioCollection = json.items.map(function (item) {
         return {
           title: item.fields.titulo,

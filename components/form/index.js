@@ -2,7 +2,6 @@ function addForm(container) {
   const formEl = document.createElement("form");
   formEl.setAttribute("class", "my-form");
   formEl.innerHTML = `
-        <h2 class="my-form__title">Escribime</h2>
         <section class="my-form__sections">
           <label class="my-form__sections__label">
             <span class="my-form__sections__name">NOMBRE</span>
@@ -28,3 +27,5 @@ function addForm(container) {
   `;
   container.appendChild(formEl);
 }
+
+function postData() {}
