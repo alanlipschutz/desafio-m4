@@ -11,6 +11,7 @@ function addComponents() {
 
 function main() {
   addComponents();
+  postData();
 }
 
 main();

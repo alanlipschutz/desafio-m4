@@ -28,4 +28,19 @@ function addForm(container) {
   container.appendChild(formEl);
 }
 
-function postData() {}
+function postData() {
+  const formEl = document.querySelector(".my-form");
+  formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const value = Object.fromEntries(data.entries());
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        to: "alanelipschutz@gmail.com",
+        message: value.message,
+      }),
+    });
+  });
+}
