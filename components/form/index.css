@@ -57,3 +57,12 @@
   font-weight: 700;
   color: rgba(219, 219, 219, 1);
 }
+
+.my-form__send-message {
+  color: rgba(250, 250, 250, 1);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 30px;
+  display: none;
+}

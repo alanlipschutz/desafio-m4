@@ -23,6 +23,9 @@ function addForm(container) {
           <div class="my-form__button-container">
             <button class="my-form__button">Enviar</button>
           </div>
+          <div class="my-form__send-message">
+            Mensaje Enviado con Exito!
+          </div>
         </section>
   `;
   container.appendChild(formEl);
@@ -30,6 +33,7 @@ function addForm(container) {
 
 function postData() {
   const formEl = document.querySelector(".my-form");
+  const messageEl = document.querySelector(".my-form__send-message");
   formEl.addEventListener("submit", (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
@@ -39,8 +43,10 @@ function postData() {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
         to: "alanelipschutz@gmail.com",
-        message: value.message,
+        message: `Nuevo correo de ${value.name}. el mail es ${value.email} y el mensaje es el siguiente: ${value.message}`,
       }),
     });
+    messageEl.style.display = "inherit";
+    formEl.reset();
   });
 }
