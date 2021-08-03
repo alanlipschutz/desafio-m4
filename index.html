@@ -7,6 +7,7 @@
     <script defer src="./components/footer/index.js"></script>
     <script defer src="./components/form/index.js"></script>
     <script defer src="./components/header/index.js"></script>
+    <script defer src="./home/index.js"></script>
     <script defer src="./index.js"></script>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./components/header/index.css" />
@@ -25,64 +26,47 @@
     <header class="header-container">
       <div class="header-encabezado-container"></div>
       <section class="header__home">
-        <h1 class="header__home__title">Hola</h1>
-        <h2 class="header__home__subtitle">Soy Alan</h2>
+        <template id="template-header__home">
+          <h1 class="header__home__title">Hola</h1>
+          <h2 class="header__home__subtitle">Soy Alan</h2>
+        </template>
       </section>
     </header>
 
     <section class="main">
-      <div class="main__container">
-        <h2 class="main__title">Soy Alan</h2>
-        <p class="main__description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
-          voluptates est minima at quo laborum! Sunt, error aspernatur? Officiis
-          eveniet, asperiores nulla hic fugiat voluptates cumque aliquid fuga
-          nihil. Error.
-        </p>
-      </div>
+      <template id="main-template">
+        <div class="main__image-container">
+          <img src="" alt="" class="main__image" />
+        </div>
+        <div class="main__container">
+          <h2 class="main__title">Soy Alan</h2>
+          <p class="main__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+            voluptates est minima at quo laborum! Sunt, error aspernatur?
+            Officiis eveniet, asperiores nulla hic fugiat voluptates cumque
+            aliquid fuga nihil. Error.
+          </p>
+        </div>
+      </template>
     </section>
     <section class="my-services">
       <h2 class="my-services__title">Mis Servicios</h2>
       <div class="my-services__container">
-        <div class="container__services">
-          <img
-            src="./images/desktop.png"
-            alt=""
-            class="container__services__img"
-          />
-          <h3 class="container__services__title">Hago Cosas</h3>
-          <article class="container__services__description">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </article>
-        </div>
-        <div class="container__services">
-          <img
-            src="./images/desktop.png"
-            alt=""
-            class="container__services__img"
-          />
-          <h3 class="container__services__title">Hago Cosas</h3>
-          <article class="container__services__description">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </article>
-        </div>
-        <div class="container__services">
-          <img
-            src="./images/desktop.png"
-            alt=""
-            class="container__services__img"
-          />
-          <h3 class="container__services__title">Y también otras cosas</h3>
-          <article class="container__services__description">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </article>
-        </div>
+        <template id="my-services-template">
+          <div class="container__services">
+            <img
+              src="./images/desktop.png"
+              alt=""
+              class="container__services__img"
+            />
+            <h3 class="container__services__title">Hago Cosas</h3>
+            <article class="container__services__description">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </article>
+          </div>
+        </template>
       </div>
     </section>
     <section class="form-container">

@@ -12,6 +12,11 @@ body {
 }
 
 /* main block */
+
+.main__image {
+  display: none;
+}
+
 .main__container {
   height: 80vh;
   background-color: rgba(20, 20, 20, 1);
