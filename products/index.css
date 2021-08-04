@@ -4,23 +4,58 @@
 
 body {
   margin: 0;
-  background-color: black;
 }
 
 /* block header */
 
 .header-container {
+  background-color: black;
+}
+
+@media (min-width: 678px) {
+  .header-container {
+    background: linear-gradient(to right, #958c40, rgba(156, 0, 210, 0.8) 100%);
+  }
 }
 
 .header__home {
   padding: 80px;
 }
 
+@media (min-width: 678px) {
+  .header__home {
+    padding: 120px;
+  }
+}
+
+@media (min-width: 678px) {
+  .header__home__subtitle {
+    text-align: left;
+  }
+}
+
 .portfolio-content {
   text-align: center;
+  background-color: black;
+  overflow: auto;
 }
+
+@media (min-width: 678px) {
+  .portfolio-content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .portfolio-link {
   text-decoration: none;
+}
+
+@media (min-width: 678px) {
+  .portfolio-link {
+    max-width: 450px;
+  }
 }
 
 .portfolio-card {

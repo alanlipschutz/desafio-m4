@@ -6,6 +6,16 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@media (min-width: 678px) {
+  .footer {
+    flex-direction: row;
+    height: auto;
+    padding: 100px;
+    justify-content: space-between;
+  }
+}
+
 .footer__title {
   font-family: "Orbitron", sans-serif;
   font-size: 48px;
@@ -16,6 +26,14 @@
 .footer__social-container {
   text-align: center;
 }
+
+@media (min-width: 678px) {
+  .footer__social-container {
+    display: grid;
+    justify-items: end;
+  }
+}
+
 .footer__social-link {
   display: flex;
   text-decoration: none;

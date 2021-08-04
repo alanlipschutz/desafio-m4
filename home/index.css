@@ -4,6 +4,23 @@
   height: 100vh;
 }
 
+@media (min-width: 678px) {
+  .header-container {
+    height: 70vh;
+  }
+}
+
 .header__home {
   padding-top: 35vh;
+}
+@media (min-width: 678px) {
+  .header__home {
+    padding-top: 20vh;
+  }
+}
+
+@media (min-width: 678px) {
+  .form-container {
+    padding: 50px 0;
+  }
 }
