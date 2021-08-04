@@ -18,14 +18,17 @@ function addCards(params) {
   descriptionEl.textContent = params.description;
   const imgEl = template.content.querySelector(".portfolio-card__img");
   imgEl.src = params.image;
-
+  const linkEl = template.content.querySelector(".portfolio-card__link");
+  linkEl.textContent = "Link a Github";
+  const hrefEl = template.content.querySelector(".portfolio-link");
+  hrefEl.setAttribute("href", params.link);
   const clone = document.importNode(template.content, true);
   container.appendChild(clone);
 }
 
 function getPortfolio() {
   return fetch(
-    "https://cdn.contentful.com/spaces/prwodad3pg7p/environments/master/entries?access_token=8LfWuDDJFBryOOfkWkgVB48jc7uQPd_nTNk_gmxuv9U&content_type=desafioModulo4"
+    "https://cdn.contentful.com/spaces/prwodad3pg7p/environments/master/entries?access_token=8LfWuDDJFBryOOfkWkgVB48jc7uQPd_nTNk_gmxuv9U&content_type=work"
   )
     .then((res) => {
       return res.json();
@@ -34,8 +37,9 @@ function getPortfolio() {
       const portfolioCollection = json.items.map(function (item) {
         return {
           title: item.fields.titulo,
-          description: item.fields.description,
-          imageUrl: item.fields.img.sys.id,
+          description: item.fields.descripcion,
+          link: item.fields.url,
+          imageUrl: item.fields.imagen.sys.id,
           includes: json.includes.Asset,
         };
       });
